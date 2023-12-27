@@ -11,6 +11,8 @@
 		271818D62B3B220D00FC4F9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271818D52B3B220D00FC4F9D /* ContentView.swift */; };
 		271818D82B3B220F00FC4F9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271818D72B3B220F00FC4F9D /* Assets.xcassets */; };
 		271818DB2B3B220F00FC4F9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271818DA2B3B220F00FC4F9D /* Preview Assets.xcassets */; };
+		271818E22B3B2A6F00FC4F9D /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271818E12B3B2A6F00FC4F9D /* AudioManager.swift */; };
+		271818E52B3BF32600FC4F9D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271818E42B3BF32600FC4F9D /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		271818D52B3B220D00FC4F9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		271818D72B3B220F00FC4F9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		271818DA2B3B220F00FC4F9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		271818E12B3B2A6F00FC4F9D /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		271818E32B3BF20E00FC4F9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		271818E42B3BF32600FC4F9D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +56,11 @@
 		271818D22B3B220D00FC4F9D /* dualingo-ios */ = {
 			isa = PBXGroup;
 			children = (
+				271818E32B3BF20E00FC4F9D /* Info.plist */,
 				271818D32B3B220D00FC4F9D /* dualingo_iosApp.swift */,
 				271818D52B3B220D00FC4F9D /* ContentView.swift */,
+				271818E12B3B2A6F00FC4F9D /* AudioManager.swift */,
+				271818E42B3BF32600FC4F9D /* NetworkManager.swift */,
 				271818D72B3B220F00FC4F9D /* Assets.xcassets */,
 				271818D92B3B220F00FC4F9D /* Preview Content */,
 			);
@@ -137,6 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271818E52B3BF32600FC4F9D /* NetworkManager.swift in Sources */,
+				271818E22B3B2A6F00FC4F9D /* AudioManager.swift in Sources */,
 				271818D62B3B220D00FC4F9D /* ContentView.swift in Sources */,
 				271818D42B3B220D00FC4F9D /* dualingo_iosApp.swift in Sources */,
 			);
@@ -275,11 +285,14 @@
 				DEVELOPMENT_TEAM = 4V2PXZWU86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "dualingo-ios/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to the microphone for recording translations.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +317,14 @@
 				DEVELOPMENT_TEAM = 4V2PXZWU86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "dualingo-ios/Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app requires access to the microphone for recording translations.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
